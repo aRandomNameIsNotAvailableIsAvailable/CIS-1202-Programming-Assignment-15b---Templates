@@ -11,6 +11,13 @@ Project Description: Write templated functions to perform math on varying numeri
 
 // namespace
 using namespace std;
+
+template <Typename T>
+T half(T value) {
+	return value / 2;
+}
+
+
 	//											+++Start Main+++
 
 int main() {
