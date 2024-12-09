@@ -18,6 +18,10 @@ T half(T value) {
 	return value / 2;
 }
 
+template <>
+double half<double>(double value) {
+	return static_cast<double>(value / 2.0);
+}
 
 	//											+++Start Main+++
 
