@@ -15,7 +15,7 @@ using namespace std;
 // templates
 template <typename T>
 T half(T value) {
-	return value / 2;
+	return round(value / 2);
 }
 
 template <>
