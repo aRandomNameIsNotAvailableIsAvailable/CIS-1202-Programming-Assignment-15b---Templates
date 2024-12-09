@@ -15,28 +15,52 @@ using namespace std;
 // templates
 template <typename T>
 T half(T value) {
-	return round(value / 2);
+	return value / 2.0;
 }
 
 template <>
-double half<double>(double value) {
-	return static_cast<double>(value / 2.0);
+int half<int>(int value) {
+	return static_cast<int>(round(value / 2.0));
 }
 
 	//											+++Start Main+++
 
 int main() {
 
-	int a = 7;
-	float b = 5.0;
-	double c = 3;
+	// declare variables 
+	double 
+		a1 = 7.0, 
+		a2 = 12.0, 
+		a3 = 9.6, 
+		a4 = 2.2;
 
-	cout << half(a);
+	float 
+		b1 = 5.0f,
+		b2 = 10.0f,
+		b3 = 22.8f,
+		b4 = 157.1f;
+
+	int 
+		c1 = 3,
+		c2 = 23,
+		c3 = 40,
+		c4 = 13;
+
+	cout << half(a1) << endl;
+	cout << half(a2) << endl;
+	cout << half(a3) << endl;
+	cout << half(a4) << endl;
 	cout << endl;
-	cout << half(b);
+	cout << half(b1) << endl;
+	cout << half(b2) << endl;
+	cout << half(b3) << endl;
+	cout << half(b4) << endl;
 	cout << endl;
-	cout << half(c);
-	cout << endl;
+	cout << half(c1) << endl;
+	cout << half(c2) << endl;
+	cout << half(c3) << endl;
+	cout << half(c4) << endl;
+
 
 	//											+++END MAIN+++
 
