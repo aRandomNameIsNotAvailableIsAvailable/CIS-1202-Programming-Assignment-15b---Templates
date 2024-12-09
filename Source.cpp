@@ -27,11 +27,11 @@ int main() {
 	float b = 5.0;
 	double c = 3;
 
-	cout << a;
+	cout << half(a);
 	cout << endl;
-	cout << b;
+	cout << half(b);
 	cout << endl;
-	cout << c;
+	cout << half(c);
 	cout << endl;
 
 	//											+++END MAIN+++
